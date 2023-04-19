@@ -1,0 +1,3 @@
+[node]
+# Replace with the URL of the Infura RPC endpoint
+rpcurl = "https://mainnet.infura.io/v3/e74092e272e345a692f93ef1d426894b"

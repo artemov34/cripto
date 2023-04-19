@@ -1,0 +1,38 @@
+=============== Apr 18, 2023 (UTC) ===============
+18:42:59.850847 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:42:59.869529 db@open opening
+18:42:59.874256 version@stat F·[] S·0B[] Sc·[]
+18:42:59.877233 db@janitor F·2 G·0
+18:42:59.877778 db@open done T·7.5319ms
+=============== Apr 18, 2023 (UTC) ===============
+18:50:29.607999 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:50:29.617049 version@stat F·[] S·0B[] Sc·[]
+18:50:29.618780 db@open opening
+18:50:29.620035 journal@recovery F·1
+18:50:29.621912 journal@recovery recovering @1
+18:50:29.633466 memdb@flush created L0@2 N·78 S·1KiB "loc..seq,v2":"version,v1"
+18:50:29.638682 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+18:50:29.663182 db@janitor F·3 G·0
+18:50:29.664182 db@open done T·44.3392ms
+=============== Apr 18, 2023 (UTC) ===============
+18:51:43.069872 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:51:43.078310 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+18:51:43.079729 db@open opening
+18:51:43.081030 journal@recovery F·1
+18:51:43.082498 journal@recovery recovering @3
+18:51:43.096222 memdb@flush created L0@5 N·53 S·932B "loc..seq,v80":"n:\xf1..ail,v82"
+18:51:43.100686 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+18:51:43.119469 db@janitor F·4 G·0
+18:51:43.120426 db@open done T·39.6006ms
+18:58:34.071781 db@close closing
+18:58:34.074182 db@close done T·2.3905ms
+=============== Apr 18, 2023 (UTC) ===============
+18:58:46.197930 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:58:46.203259 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+18:58:46.203922 db@open opening
+18:58:46.204968 journal@recovery F·1
+18:58:46.206072 journal@recovery recovering @6
+18:58:46.216257 memdb@flush created L0@8 N·70 S·1KiB "loc..seq,v134":"n:\xf1..ail,v137"
+18:58:46.219700 version@stat F·[3] S·3KiB[3KiB] Sc·[0.75]
+18:58:46.239453 db@janitor F·5 G·0
+18:58:46.241213 db@open done T·36.4495ms

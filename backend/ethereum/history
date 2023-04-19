@@ -1,0 +1,13 @@
+
+net.listening
+eht.syncing
+eth.syncing
+ls
+eth.syncing
+admin.nodeInfo.enode
+ps aux | grep geth
+net.listening
+console
+web3.fromWei(eth.getBalance('0xFBb1b73C4f0BDa4f67dcA266ce6Ef42f520fBB98'), 'ether')
+web3.fromWei(eth.getBalance('0x6cD4d807f81141384AF39eca68aa0623BCBCf20a'), 'ether')
+web3.fromWei(eth.getBalance('0x7B15d09038DaaBE80C94A7D60561d0fb76a441BE'), 'ether')

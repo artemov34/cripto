@@ -1,8 +1,8 @@
 version: '3.9'
 services:
-  app:
+  backend:
     build:
-      context: .
+      context: ./backend
       dockerfile: Dockerfile
       target: dev
     ports:
@@ -11,6 +11,8 @@ services:
       - ./src:/app/src
     depends_on:
       - db
+    networks:
+      - ethereum_network
 
   db:
     image: postgres
@@ -19,3 +21,26 @@ services:
       - 5432:5432
     environment:
       POSTGRES_PASSWORD: postgres
+    networks:
+      - ethereum_network
+  geth:
+    image: ethereum/client-go
+    container_name: geth
+    command: --cache 1024 --log.debug --nousb --datadir /root/.ethereum --nodiscover --syncmode full --port 30313 --http --http.addr "0.0.0.0" --http.port 8503 --http.api "db,eth,net,web3,admin,personal"
+    ports:
+      - '8503:8503'
+      - '30303:30303'
+    volumes:
+      - ./backend/ethereum:/root/.ethereum:rw
+    networks:
+      - ethereum_network
+  frontend:
+    container_name: angular
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+
+networks:
+  ethereum_network:
